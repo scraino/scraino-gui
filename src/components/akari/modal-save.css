@@ -1,0 +1,37 @@
+@import '../../css/colors.css';
+
+.modal-content {
+    width: 400px;
+}
+
+.body {
+    background: $ui-white;
+    padding: 1.5rem 2.25rem;
+}
+
+.des > p:first-child {
+    margin-top: 0;
+}
+
+.button-row {
+    font-weight: bolder;
+    text-align: right;
+}
+
+.button-row button {
+    border: 1px solid $ui-black-transparent;
+    border-radius: 0.25rem;
+    padding: 0.55rem 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+.button-row button.ok-button {
+    background: $motion-primary;
+    border: $motion-primary;
+    color: white;
+}
+
+.button-row button + button {
+    margin-left: 0.5rem;
+}

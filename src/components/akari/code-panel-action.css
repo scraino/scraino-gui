@@ -1,0 +1,71 @@
+.tooltip {
+    background-color: hsla(163, 85%, 40%, 1) !important;
+    opacity: 1 !important;
+    border: 1px solid hsla(0, 0%, 0%, .1) !important;
+    box-shadow: 0 0 .5rem hsla(0, 0%, 0%, .25) !important;
+    border-radius: .25rem !important;
+    line-height: 1.25rem !important;
+    z-index: 100 !important;
+}
+
+.tooltip:after {
+    content: "";
+    border-top: 1px solid hsla(0, 0%, 0%, .1) !important;
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+    border-right: 1px solid hsla(0, 0%, 0%, .1) !important;
+    border-radius: .25rem;
+    background-color: hsla(163, 85%, 40%, 1) !important;
+    height: .5rem !important;
+    width: .5rem !important;
+}
+
+.tooltip:global(.place-left):after {
+    margin-top: -.25rem !important;
+    right: -.25rem !important;
+    transform: rotate(45deg) !important;
+}
+
+.tooltip:global(.place-right):after {
+    margin-top: -.25rem !important;
+    left: -.25rem !important;
+    transform: rotate(-135deg) !important;
+}
+
+.tooltip:global(.place-top):after {
+    margin-right: -.25rem !important;
+    bottom: -.25rem !important;
+    transform: rotate(135deg) !important;
+}
+
+.tooltip:global(.place-bottom):after {
+    margin-left: -.25rem !important;
+    top: -.25rem !important;
+    transform: rotate(-45deg) !important;
+}
+
+.actions {
+    height: 40px;
+    background: #d9e3f2;
+    border: 1px solid hsla(0, 0%, 0%, 0.15);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+.action {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: 0.2s ease-out;
+}
+
+.action:hover {
+    transform: scale(1.2);
+}

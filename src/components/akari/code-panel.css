@@ -1,0 +1,23 @@
+.wrapper {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    height: calc(100% - 60px);
+    margin: 5px 8px;
+    z-index: 120;
+}
+
+.large{
+    width: 480px;
+}
+
+.small{
+    width: 240px;
+}
+
+.code {
+    height: calc(100% - 40px);
+    background: #f9f9f9;
+    border-left: 1px solid hsla(0, 0%, 0%, 0.15);
+    border-right: 1px solid hsla(0, 0%, 0%, 0.15);
+}
