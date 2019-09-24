@@ -1,3 +1,5 @@
+## 注意：我们暂时不再维护此项目，请前往[此处](https://github.com/yahb/scraino-gui)查看Scraino的最新内容.
+
 # scraino-gui
 The development is based on the foundation of [scratch-gui](https://github.com/LLK/scratch-gui)
 
